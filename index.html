@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Check.AI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="icon.png"
+                alt="Deep Check.AI logo">
+            <span>Deep Check.AI</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about-section">About</a>
+            <a href="#features-section">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button onclick="showLoginPage()" class="login-button">Login</button>
+    </header>
+
+    <!-- Upload Section -->
+    <section class="upload-section" id="home">
+        <h2>Upload Video for Deep Fake Detection</h2>
+        <div class="upload-actions">
+            <input type="file" accept="video/*" class="upload-input">
+            <button class="custom-button">Analyze Video</button>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section" id="about-section">
+        <div class="info-box">
+            <h2>What is Deepfake?</h2>
+            <p>Deepfake technology uses artificial intelligence to create realistic, synthetic media. By manipulating
+                images, videos, or audio, it can make it appear that someone is saying or doing something they never did.
+            </p>
+            <p>While the technology has been used for entertainment and artistic purposes, it also poses significant
+                ethical challenges and potential for misuse, including misinformation and fraud. Deepfake detection has
+                become essential to combat these threats. Our system uses advanced algorithms to identify manipulated
+                content, ensuring that media remains authentic and trustworthy.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features-section">
+        <h2>Our Features</h2>
+        <div class="features-content">
+            <div class="feature-item">
+                <img src="icon 1 .png" alt="Feature 1">
+                <h3>Advanced Detection Algorithms</h3>
+                <p>Our system leverages cutting-edge artificial intelligence algorithms to accurately detect deepfakes. Using a combination of machine learning and computer vision techniques, our algorithms analyze subtle cues in media content, such as inconsistencies in facial movements, lighting , to identify manipulated content with high precision.</p>
+            </div>
+            <div class="feature-item">
+                <img src="features .png" alt="Feature 2">
+                <h3>Real-Time Analysis</h3>
+                <p>Our platform offers real-time analysis of video and audio content, providing instant feedback on the authenticity of the media. Whether you're screening content for potential deepfakes or monitoring live streams, our system processes and evaluates data on the fly, ensuring that you receive timely insights to make informed decisions.</p>
+            </div>
+            <div class="feature-item">
+                <img src="icon 3 .png" alt="Feature 3">
+                <h3>User-Friendly Interface</h3>
+                <p>Designed with ease of use in mind, our platform features an intuitive interface that requires no technical expertise. Users can effortlessly upload and analyze media files, access detailed reports, and navigate through the platform's features with ease. Our goal is to make deepfake detection accessible to everyone, from industry professionals to everyday users.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scroll Section -->
+    <section class="infinite-scroll" id="infiniteScroll">
+        <h2>Deep Fake Detection Results</h2>
+        <div class="results-container" id="resultsContainer">
+            <!-- Results will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <a class="back-link" href="#"> &lt; Back </a>
+
+    <script src="script.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Our Office</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> 71-75 Shelton Street, Covent Garden, London, United Kingdom,
+                    WC2H 9JQ
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    
+                    
+                    <li>Deepfake Detection</li>
+                    <li>images and videos</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Terms & Condition</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © <a href="https://deepfakedetector.ai">deepfakedetector.ai</a>, All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

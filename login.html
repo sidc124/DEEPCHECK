@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Font and Icon Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Basic Page Styles */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #241616, #471452);
+            color: #EAEAEA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Login Container */
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 350px;
+            position: relative;
+        }
+
+        /* User Icon */
+        .login-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: -60px auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-eT04Mkg9UR8ZQpwIYEqE2UgC.png')
+                no-repeat center;
+            background-size: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Input Group */
+        .input-group {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 22px 50px 22px -10px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #EAEAEA;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #EAEAEA;
+        }
+
+        /* Login Options */
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #EAEAEA;
+        }
+
+        /* Login Button */
+        .login-button {
+            background-color: #471452;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 0;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #6C63FF;
+            transform: translateY(-3px);
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            padding: 8px 15px;
+            color: #EAEAEA;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #6C63FF;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login Form Container -->
+    <div class="login-container">
+        <button class="back-button" onclick="window.history.back();">Back</button>
+        <div class="login-icon">
+            <!-- The user icon is set as a background image -->
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email ID">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="login-options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#" style="color: #EAEAEA;">Forgot Password?</a>
+        </div>
+        <button class="login-button">LOGIN</button>
+    </div>
+
+</body>
+
+</html>
